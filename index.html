@@ -17,20 +17,24 @@
   </head>
   <body>
     <h1>Welcome to your Weather Dashboard!</h1>
-    <main class="d-flex row">
+    <main class="d-flex flex-column">
       <aside class="searchBar d-flex flex-column col-3">
         <h2>Search for a City:</h2>
         <input type="text" class="citySearch" id="citySearch" />
-        <button type="search" class="col-4 align-center">Search</button>
+        <button type="search" class="col-4 offset-md-4" id="searchBtn">
+          Search
+        </button>
       </aside>
-      <section class="col-9 dayOfForecast">
+      <article class="col-9 dayOfForecast">
+        day of forecast test
         <!-- this is where that city's day of weather report will go -->
-      </section>
-      <section class="cards col-9">
+      </article>
+      <article class="cards col-9">
         <div id="card" class="col-3">
+          future forecast test
           <!-- this is where weather daily forecast cards will be added -->
         </div>
-      </section>
+      </article>
     </main>
     <script src="./assets/script.js" async defer></script>
   </body>
