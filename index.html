@@ -15,10 +15,13 @@
     />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
+
   <body>
-    <h1>Welcome to your Weather Dashboard!</h1>
-    <main class="d-flex flex-column">
-      <aside class="searchBar d-flex flex-column col-3">
+    <header>
+      <h1>Welcome to your Weather Dashboard!</h1>
+    </header>
+    <div id="searchAndHistory" class="row container-fluid">
+      <div id="search" class="col-md-4">
         <h2>Search for a City:</h2>
         <input
           type="text"
@@ -29,18 +32,13 @@
         <button type="search" class="col-4 offset-md-4" id="searchBtn">
           Search
         </button>
-      </aside>
-      <article class="col-9 dayOfForecast">
-        day of forecast test
-        <!-- this is where that city's day of weather report will go -->
-      </article>
-      <article class="cards col-9">
-        <div id="card" class="col-3">
-          future forecast test
-          <!-- this is where weather daily forecast cards will be added -->
-        </div>
-      </article>
-    </main>
+      </div>
+      <div id="dayOfForecast" class="col-md-8">day of forecast</div>
+    </div>
+    <div id="forecasts" class="row container-fluid">
+      <div id="history" class="col-md-4">history section</div>
+      <div id="fiveDayForecast" class="col-md-8">5 day forecast</div>
+    </div>
     <script src="./assets/script.js" async defer></script>
   </body>
 </html>
